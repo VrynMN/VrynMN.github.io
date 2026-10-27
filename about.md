@@ -26,7 +26,7 @@ permalink: /about/
    <ul class="history-list">
     <li>
         <p class="history-date">2026년 2학기 ~</p>
-        <h3>정보보안 동아리 임원</h3>
+        <h3>CERT-IS 대내부 임원</h3>
     </li>
     <li>
         <p class="history-date">2026년 2학기 ~</p>
