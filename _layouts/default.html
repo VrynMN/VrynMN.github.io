@@ -11,7 +11,7 @@
 <body>
 <a class="skip-link" href="#main">본문으로 이동</a>
 <div class="shell">
-<header class="header"><a class="home" href="{{ '/' | relative_url }}">Home</a><nav aria-label="주 메뉴"><a href="{{ '/posts/' | relative_url }}">Posts</a><a href="{{ '/about/' | relative_url }}">About</a></nav></header>
+<header class="header"><a class="home" href="{{ '/home/' | relative_url }}">Home</a><nav aria-label="주 메뉴"><a href="{{ '/posts/' | relative_url }}">Posts</a><a href="{{ '/about/' | relative_url }}">About</a></nav></header>
 <main id="main">{{ content }}</main>
 <footer class="footer">© {{ 'now' | date: '%Y' }} <a href="{{ site.github_url | escape }}">{{ site.author | escape }}</a></footer>
 </div></body></html>
