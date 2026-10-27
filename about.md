@@ -30,7 +30,7 @@ permalink: /about/
     </li>
     <li>
         <p class="history-date">2026년 2학기 ~</p>
-        <h3>나이프 3기</h3>
+        <h3>Knights Frontier 3기</h3>
     </li>
     </ul>
   </section>
