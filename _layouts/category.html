@@ -5,4 +5,9 @@ layout: default
 <nav class="category-nav" aria-label="카테고리 선택">{% for category in site.data.categories %}<a href="{{ '/categories/' | append: category.slug | append: '/' | relative_url }}" {% if category.name == page.category_name %}aria-current="page"{% endif %}>{{ category.name | escape }}</a>{% endfor %}</nav>
 {% assign category_name = page.category_name %}
 {% assign category_posts = site.categories[category_name] %}
+<p>
+  분류: [{{ page.category_name }}] /
+  전체 글: {{ site.posts.size }} /
+  분류 글: {{ category_posts.size }}
+</p>
 {% include post-list.html posts=category_posts %}
