@@ -1,174 +1,21 @@
-# 블로그 기본 설정
-theme: jekyll-theme-chirpy
-
-lang: ko-KR
-timezone: Asia/Seoul
-
-title: ""
-tagline: ""
-description: >-
-  ""
-
-url: "https://vrynmn.github.io"
+title: Notes
+description: 개발과 보안을 배우며 기록하는 블로그
+url: https://vrynmn.github.io
 baseurl: ""
-
-github:
-  username: VrynMN
-
-twitter:
-  username:
-
-social:
-  name: Vryn
-  email:
-  fediverse_handle:
-  links:
-    - https://github.com/VrynMN
-
-# 검색엔진 소유권 인증
-webmaster_verifications:
-  google:
-  bing:
-  alexa:
-  yandex:
-  baidu:
-  facebook:
-
-# 방문자 분석
-analytics:
-  google:
-    id:
-  goatcounter:
-    id:
-  umami:
-    id:
-    domain:
-  matomo:
-    id:
-    domain:
-  cloudflare:
-    id:
-  fathom:
-    id:
-
-pageviews:
-  provider:
-
-# 비워두면 기기 설정에 따라 밝은/어두운 테마 적용
-theme_mode:
-
-# 이미지 설정
-cdn:
-avatar:
-social_preview_image:
-
-# 글 목차 표시
-toc: true
-
-actions:
-  edit_post:
-    enabled: false
-    url: ""
-    static_url: false
-
-# 댓글 설정
-comments:
-  provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
-  giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
-
-assets:
-  self_host:
-    enabled:
-    env:
-
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-    deny_paths: []
-
-# 한 페이지에 표시할 글 수
-paginate: 10
-
-# 테마 동작에 필요한 설정
-kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
-
-collections:
-  tabs:
-    output: true
-    sort_by: order
-
+lang: ko
+timezone: Asia/Seoul
+author: Vryn
+github_url: https://github.com/VrynMN
+markdown: kramdown
+highlighter: rouge
+permalink: /posts/:title/
+future: false
+strict_front_matter: true
+plugins_dir: _custom_plugins
+exclude: [README.md, APPLY.md, Gemfile, Gemfile.lock, vendor, node_modules, tools, _tabs, _plugins, preview.html, examples, .devcontainer, .vscode, .gitmodules]
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-
-sass:
-  style: compressed
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
-  ignore:
-    envs: [development]
-
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - purgecss.js
-  - "*.config.js"
-  - "package*.json"
-
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/

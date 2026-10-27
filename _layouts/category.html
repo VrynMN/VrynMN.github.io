@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<section class="page-head"><a class="back" href="{{ '/' | relative_url }}">← Home</a><h1>{{ page.title | escape }}</h1></section>
+<nav class="category-nav" aria-label="카테고리 선택">{% for category in site.data.categories %}<a href="{{ '/categories/' | append: category.slug | append: '/' | relative_url }}" {% if category.name == page.category_name %}aria-current="page"{% endif %}>{{ category.name | escape }}</a>{% endfor %}</nav>
+{% assign category_posts = site.posts | where_exp: 'post', 'post.categories contains page.category_name' %}
+{% include post-list.html posts=category_posts %}

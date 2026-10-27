@@ -1,0 +1,5 @@
+<ul class="post-list">
+{% for post in include.posts %}
+<li><article class="post-row"><div class="post-info"><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>{% if post.categories.size > 0 %}<span class="post-category">{{ post.categories | join: ' / ' | escape }}</span>{% endif %}</div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></article></li>
+{% else %}<li class="empty">아직 작성된 글이 없습니다.</li>{% endfor %}
+</ul>

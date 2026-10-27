@@ -1,0 +1,4 @@
+---
+layout: default
+---
+<article><header class="page-head"><a class="back" href="{{ '/posts/' | relative_url }}">← Posts</a><h1>{{ page.title | escape }}</h1><div class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% for category in site.data.categories %}{% if page.categories contains category.name %}<a href="{{ '/categories/' | append: category.slug | append: '/' | relative_url }}">{{ category.name | escape }}</a>{% endif %}{% endfor %}</div></header><div class="prose">{{ content }}</div>{% if page.tags.size > 0 %}<div class="tags">{% for tag in page.tags %}<span>#{{ tag | escape }}</span>{% endfor %}</div>{% endif %}</article>
