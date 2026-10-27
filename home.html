@@ -2,6 +2,68 @@
 layout: default
 permalink: /home/
 ---
-<section class="intro" aria-labelledby="hello"><div class="greeting"><h1 id="hello">Hi there</h1><img class="mascot" src="{{ '/assets/img/folder.png' | relative_url }}" alt="웃는 하늘색 폴더 캐릭터" width="64" height="64"></div><p>Welcome to my blog</p></section>
-<section class="categories" aria-labelledby="categories"><h2 id="categories">Categories</h2><ul class="category-grid">{% for category in site.data.categories %}<li><a href="{{ '/categories/' | append: category.slug | append: '/' | relative_url }}">{{ category.name | escape }}</a></li>{% endfor %}</ul></section>
-<section class="recent" aria-labelledby="recent"><div class="section-heading"><h2 id="recent">Recent posts</h2><a href="{{ '/posts/' | relative_url }}">View all →</a></div>{% assign recent_posts = site.posts | slice: 0, 5 %}{% include post-list.html posts=recent_posts %}</section>
+
+<section class="intro" aria-labelledby="hello">
+  <div class="greeting">
+    <h1 id="hello">Hi there</h1>
+    <img
+      class="mascot"
+      src="{{ '/assets/img/folder.png' | relative_url }}"
+      alt="웃는 하늘색 폴더 캐릭터"
+      width="64"
+      height="64"
+    >
+  </div>
+  <p>Welcome to my blog</p>
+</section>
+
+<section class="categories" aria-labelledby="categories">
+  <h2 id="categories">Categories</h2>
+
+  <ul class="category-grid home-categories">
+    {% for category in site.data.categories %}
+      {% assign category_posts = site.posts | where_exp: "post", "post.categories contains category.name" %}
+
+      <li>
+        <a
+          class="category-button"
+          href="{{ '/categories/' | append: category.slug | append: '/' | relative_url }}"
+        >
+          <svg
+            class="folder-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"
+              fill="#DDF3FC"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <span class="category-name">{{ category.name | escape }}</span>
+
+          <span class="category-count">
+            <span class="visually-hidden">글 수 </span>
+            {{ category_posts.size }}
+          </span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="recent" aria-labelledby="recent">
+  <div class="section-heading">
+    <h2 id="recent">Recent posts</h2>
+    <a href="{{ '/posts/' | relative_url }}">View all →</a>
+  </div>
+
+  {% assign recent_posts = site.posts | slice: 0, 5 %}
+  {% include post-list.html posts=recent_posts %}
+</section>
