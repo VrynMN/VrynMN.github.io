@@ -161,3 +161,15 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+.post-category {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  border: 1px solid #d5eaf4;
+  border-radius: 6px;
+  background: #f0f9ff;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5;
+}
