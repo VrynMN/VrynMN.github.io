@@ -173,3 +173,16 @@
   font-size: 12px;
   line-height: 1.5;
 }
+
+.header .home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-icon {
+  width: 1.1em;
+  height: 1.1em;
+  object-fit: contain;
+  flex-shrink: 0;
+}
