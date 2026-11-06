@@ -2,7 +2,6 @@
 title: "'나에 대해 기록하기'"
 date: 2026-11-06 13:20:00 +0900
 categories: ["블로그/기술문서"]
-tags: [키워드1, 키워드2]
 ---
 <div class="post-summary" markdown="1">
 
