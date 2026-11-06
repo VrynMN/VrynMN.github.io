@@ -209,3 +209,27 @@
 .page-head:has(.post-meta) {
   padding-bottom: 24px;
 }
+
+/* 개요 박스 */
+.prose .post-summary {
+  margin-bottom: 32px;
+  padding: 18px 22px;
+  background: #fafbfc;
+  border: 1px solid #eceef0;
+  border-radius: 10px;
+}
+
+.prose .post-summary h2 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.prose .post-summary p:last-child {
+  margin-bottom: 0;
+}
+
+/* 본문의 큰 제목(##) 옆 세로선 */
+.prose > h2 {
+  padding-left: 12px;
+  border-left: 3px solid #ace2f7;
+}
