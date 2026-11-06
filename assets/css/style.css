@@ -186,3 +186,26 @@
   object-fit: contain;
   flex-shrink: 0;
 }
+
+/* 글 상세 화면의 날짜와 카테고리 */
+.post-meta {
+  align-items: center;
+  gap: 8px 12px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.post-meta time {
+  color: #666;
+}
+
+.post-meta a {
+  padding: 2px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+}
+
+/* 구분선과 본문 사이 여백 */
+.page-head:has(.post-meta) {
+  padding-bottom: 24px;
+}
