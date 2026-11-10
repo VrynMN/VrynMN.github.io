@@ -233,3 +233,48 @@
   padding-left: 12px;
   border-left: 3px solid #ace2f7;
 }
+
+.prose .post-references {
+  margin-top: 20px;
+  padding: 20px 24px;
+  background: #fafbfc;
+  border: 1px solid #eceef0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.post-references ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.post-references li {
+  padding-left: 6px;
+}
+
+.post-references li + li {
+  margin-top: 16px;
+}
+
+.post-references li::marker {
+  color: #777;
+  font-size: 12px;
+}
+
+.prose .post-references a {
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.prose .post-references a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ace2f7;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .prose .post-references {
+    padding: 16px;
+  }
+}

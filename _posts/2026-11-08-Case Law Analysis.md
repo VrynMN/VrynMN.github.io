@@ -86,9 +86,12 @@ categories: ["블로그/기술문서"]
 
 ## 참고문헌
 
+<div class="post-references" markdown="1">
+
 1. [대법원 2016. 8. 17. 선고 2014다235080 판결](https://law.go.kr/LSW/precInfoP.do?precSeq=183259)
 2. [서울중앙지방법원 2014. 11. 4. 선고 2013나49885 판결](https://law.go.kr/precInfoP.do?precSeq=176484)
 3. [김민중. (2016). 공개된 사진, 성명, 성별, 출생연도, 직업, 직장, 학력, 경력 등을 동의 없이 수집·제공한 행위에 대한 책임 - 대법원 2016.8.17. 선고 2014다235080 판결을 중심으로 -. 동북아법연구, 10(2), 553-597.](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002149185)
 4. [함인선 (2017). 公開된 個人情報 處理의 違法性 - 대법원 2016. 8. 17. 선고 2014다235080 판결 -. 행정판례연구, 22(2), 31 - 59.](https://kci.go.kr/kciportal/landing/article.kci?arti_id=ART002309460)
 5. [국가법령정보센터, 「개인정보 보호법」 제15조·제17조](https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EB%B2%95)
 
+</div>

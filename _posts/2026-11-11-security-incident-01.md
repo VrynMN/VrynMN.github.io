@@ -112,7 +112,11 @@ MFA를 적용하면 해결되는지도 생각해 봤다. MFA는 계정에 로그
 
 ## 참고 자료
 
+<div class="post-references" markdown="1">
+
 - Salesforce Security, [Protecting Your Data: Essential Actions to Secure Experience Cloud Guest User Access](https://www.salesforce.com/blog/protecting-your-data-essential-actions-to-secure-experience-cloud-guest-user-access/)
 - Google Mandiant, [AuraInspector: Auditing Salesforce Aura for Data Exposure](https://cloud.google.com/blog/topics/threat-intelligence/auditing-salesforce-aura-data-exposure?hl=en)
 - Varonis Threat Labs, [What You Need To Know About Salesforce AuraInspector Attacks](https://www.varonis.com/blog/shinyhunters-salesforce-aurainspector-attack)
 - Varonis, [Abusing Misconfigured Salesforce Experiences for Recon and Data Theft](https://www.varonis.com/blog/misconfigured-salesforce-experiences)
+
+</div>
