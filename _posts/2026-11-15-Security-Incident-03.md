@@ -9,7 +9,7 @@ categories: ["블로그/기술문서"]
 
 2026년 8월 11일 스위스 클라우드·호스팅 업체 Nine의 고객 한 곳에 대량의 공격 트래픽이 몰렸다. Nine은 이 고객을 인터넷에 연결해 주고 있었기 때문에 공격 트래픽이 Nine의 회선에도 부담을 줬다. 몇 시간 뒤에는 Nine의 자체 웹사이트도 공격 대상이 됐고, 같은 플랫폼을 쓰던 다른 고객의 앱까지 영향을 받았다.
 
-DDoS는 여러 곳에서 대량의 트래픽을 보내 정상 사용자가 서비스를 이용하기 어렵게 만드는 공격이다. 이번 사고에서 Nine은 무단 데이터 접근이나 시스템 침해가 없었다고 밝혔다. 고객이 앱에 접속하거나 서비스를 관리하기 어려워졌다는 점에서, 서비스를 필요할 때 이용할 수 있는 상태인 가용성이 문제였다.l
+DDoS는 여러 곳에서 대량의 트래픽을 보내 정상 사용자가 서비스를 이용하기 어렵게 만드는 공격이다. 이번 사고에서 Nine은 무단 데이터 접근이나 시스템 침해가 없었다고 밝혔다. 고객이 앱에 접속하거나 서비스를 관리하기 어려워졌다는 점에서, 서비스를 필요할 때 이용할 수 있는 상태인 가용성이 문제였다.
 
 
 ## 사건 타임라인
@@ -60,9 +60,10 @@ Deploio에서는 여러 앱이 같은 IP 주소에 의존하는 구조를 줄이
 
 이 사건에서 내가 가장 눈여겨본 부분은 공격받은 서비스 하나를 어떻게 보호하느냐에 따라 다른 고객의 피해도 달라진다는 점이다. 블랙홀 라우팅은 공유 회선을 지키는 데 도움이 됐지만, 그 주소를 이용하는 정상 사용자도 접속할 수 없었다. 운영팀 입장에서는 평소에 차단이 어느 경로까지 적용되는지 확인하고, 공격 대상이 된 서비스와 고객 지원 채널을 계속 운영할 방법까지 준비해야 한다고 생각했다.
 
-<div class="post-references" markdown="1">
 
 ## 참고 자료
+
+<div class="post-references" markdown="1">
 
 -  [Three Days in August: What a DDoS Attack Exposed in Our Network](https://nine.ch/en/blog/ddos-attack-august-2026-postmortem/) 
 -  [Postmortem: DDoS Attack Against Our Network, 11 to 13 August 2026 (PDF)](https://nine.ch/uploads/Postmortem_DDoS-attack_August-2026_EN.pdf)

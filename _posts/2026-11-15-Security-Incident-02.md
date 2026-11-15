@@ -73,9 +73,10 @@ Trivu 공급망 공격의 영향을 확인하려면 먼저 실행 기록을 살�
 
 이 사건을 보면서 취약점 검사 작업이 왜 배포용 AWS 키까지 읽을 수 있었는지 생각해 보게 됐다. 검사와 배포를 같은 자동화 과정에서 실행하더라도 두 작업에 필요한 권한은 다르다. 검사 과정에서 쓸 수 있는 키를 줄여 두었다면, 잘못된 버전이 실행됐을 때도 피해가 클라우드까지 번질 가능성을 줄일 수 있었을 것이다.
 
-<div class="post-references" markdown="1">
 
 ## 참고 자료
+
+<div class="post-references" markdown="1">
 
 - [Trivy 프로젝트 팀](https://github.com/aquasecurity/trivy/discussions/10462)
 - [Aqua Security](https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know/)
