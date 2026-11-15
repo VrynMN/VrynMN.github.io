@@ -1,11 +1,11 @@
 ---
-title: "로그인 없이 CRM 데이터가 노출된 이유: Salesforce Experience Cloud 권한 오설정 악용 사례"
+title: "Salesforce Experience Cloud 권한 오설정 악용 사례"
 date: 2026-11-11 01:20:00 +0900
 categories: ["블로그/기술문서"]
 ---
 
 
-## 로그인 없이 CRM 데이터가 노출된 이유: Salesforce Experience Cloud 권한 오설정 악용 사례
+## 로그인 없이 CRM 데이터가 노출된 이유 - Salesforce Experience Cloud 권한 오설정 악용 사례
 
 보안 사고라고 하면 보통 비밀번호를 알아내거나 프로그램의 취약점을 공격하는 상황을 떠올린다. 그런데 이번 Salesforce 사례는 접근 권한을 잘못 설정한 것만으로도 민감한 정보가 노출될 수 있다는 점을 보여준다.
 
