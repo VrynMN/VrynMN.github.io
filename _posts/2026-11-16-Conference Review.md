@@ -10,7 +10,6 @@ categories: ["블로그/기술문서"]
 - 발표: The 10th Annual Black Hat USA Network Operations Center (NOC) Report
 - 발표자: Neil Wyler(Grifter), Bart Stump
 - [Black Hat 영상](https://www.youtube.com/watch?v=63bUI-2APY4)
-
 </div>
 
 이번에 본 영상은 Black Hat 행사장에서 쓰는 네트워크를 어떻게 만들고 관리하는지 소개하는 발표였다. NOC는 Network Operations Center의 약자로, 네트워크가 잘 돌아가는지 지켜보고 문제가 생기면 대응하는 팀이다. 처음에는 행사장 Wi-Fi를 관리하는 일이 주된 내용일 줄 알았다. 그런데 영상을 보니 인터넷 연결을 안정적으로 유지하는 것만큼이나, 수많은 알림 중 어떤 것에 대응할지 판단하는 일도 중요했다.
