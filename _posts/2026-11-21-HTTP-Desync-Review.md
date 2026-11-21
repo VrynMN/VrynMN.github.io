@@ -11,6 +11,7 @@ categories: ["논문/컨퍼런스"]
 - **학회·연도:** USENIX Security Symposium 2025
 - **저자:** Keran Mu, Jianjun Chen, Jianwei Zhuge, Qi Li, Haixin Duan, Nick Feamster
 - **주제:** HTTP 구현체 간 해석 차이로 발생하는 보안 문제와 이를 자동 탐지하는 HDHunter
+- **링크:** [논문 소개 및 원문](https://www.usenix.org/conference/usenixsecurity25/presentation/mu)
 </div>
 
 ## 논문 선정 이유
@@ -127,7 +128,6 @@ HDHunter는 변형한 입력을 두 구현체에서 실행하고, 실행 coverag
 리뷰에 사용한 그림은 원문 논문에서 인용하였다.
 
 원문: Mu et al. (2025). _The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing_. USENIX Security Symposium 2025.  
-링크: [논문 소개 및 원문](https://www.usenix.org/conference/usenixsecurity25/presentation/mu)
 
 - 그림 1. 프록시와 백엔드의 요청 경계 해석 차이: 원문 Figure 1.
 - 그림 2. HDHunter의 전체 구조와 동작 과정: 원문 Figure 3.
