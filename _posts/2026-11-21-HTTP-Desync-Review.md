@@ -5,13 +5,13 @@ categories: ["논문/컨퍼런스"]
 
 ---
 
-
-## The Silent Danger in HTTP 논문 리뷰
+<div class="post-summary" markdown="1">
 
 - **원문 제목:** The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing
 - **학회·연도:** USENIX Security Symposium 2025
 - **저자:** Keran Mu, Jianjun Chen, Jianwei Zhuge, Qi Li, Haixin Duan, Nick Feamster
 - **주제:** HTTP 구현체 간 해석 차이로 발생하는 보안 문제와 이를 자동 탐지하는 HDHunter
+</div>
 
 ## 논문 선정 이유
 
