@@ -122,6 +122,8 @@ HDHunter는 변형한 입력을 두 구현체에서 실행하고, 실행 coverag
 
 ## 그림 출처
 
+<div class="post-references" markdown="1">
+
 리뷰에 사용한 그림은 원문 논문에서 인용하였다.
 
 원문: Mu et al. (2025). _The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing_. USENIX Security Symposium 2025.  
@@ -130,3 +132,4 @@ HDHunter는 변형한 입력을 두 구현체에서 실행하고, 실행 coverag
 - 그림 1. 프록시와 백엔드의 요청 경계 해석 차이: 원문 Figure 1.
 - 그림 2. HDHunter의 전체 구조와 동작 과정: 원문 Figure 3.
 - 그림 3. HTTP Desync를 이용한 네 가지 공격 사례: 원문 Figure 7.
+</div>
